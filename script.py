@@ -127,7 +127,7 @@ def main(_):
     load_process_and_save_all(input_directory, messages_directory, orienter, runs=runs)
     for directory in os.listdir(messages_directory):
         print("Directory: ", directory)
-        query_extracted_messages(f"{messages_directory}/{directory}", output_directory, FLAGS.model, FLAGS.temperature, FLAGS.request_timeout, logger=None, type=FLAGS.type)         
+        query_extracted_messages(f"{messages_directory}/{directory}", f"{output_directory}/{directory}", FLAGS.model, FLAGS.temperature, FLAGS.request_timeout, logger=None, type=FLAGS.type)         
             
 
 

@@ -6,4 +6,4 @@ python script.py \
     --temperature 0.0 \
     --request_timeout 120 \
     --type mistral \
-    --num_runs 20
+    --num_runs 2

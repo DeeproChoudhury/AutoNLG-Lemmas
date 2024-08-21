@@ -25,7 +25,7 @@ class LLMMixture:
         self.request_timeout = request_timeout
         self.openai_api_key = os.environ["OPENAI_API_KEY"]
         self.mistral_api_key = os.environ["MISTRAL_API_KEY"]
-        self.organisation = os.environ["OPENAI_ORGANISATION"]
+        # self.organisation = os.environ["OPENAI_ORGANISATION"]
         if type == "openai":
             self.client = openai.OpenAI(
                 api_key=self.openai_api_key
